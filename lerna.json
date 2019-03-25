@@ -3,6 +3,7 @@
     "publish": {
       "conventionalCommits": true,
       "changelogPreset": "@commitlint/config-conventional",
+      "message": "chore(release): publish %s",
       "allowBranch": ["master", "develop"],
       "ignoreChanges": ["**/*.md"]
     },
