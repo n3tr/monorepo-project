@@ -1,0 +1,25 @@
+# npm / node
+*.log
+node_modules/
+dist/
+
+# our own scripts
+build
+storybook-static
+
+# coverage
+.coverage/
+coverage/
+
+# IDEs
+.idea
+.vscode/settings.json
+
+*.rej
+*.lerna_backup
+
+.flow-coverage*
+
+# OS
+.DS_Store
+
