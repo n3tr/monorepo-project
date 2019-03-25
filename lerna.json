@@ -1,6 +1,21 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "changelogPreset": "@commitlint/config-conventional",
+      "allowBranch": ["master", "develop"],
+      "ignoreChanges": ["**/*.md"]
+    },
+    "bootstrap": {
+      "npmClientArgs": ["--no-package-lock"],
+      "hoist": true,
+      "ignoreScripts": true
+    }
+  },
+  "devDependencies": {},
+  "packages": ["packages/*"],
+  "scripts": {
+    "prepublish": "lerna bootstrap && npm run build"
+  },
   "version": "independent"
 }
