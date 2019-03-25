@@ -1,1 +1,3 @@
-module.exports = 'Package A'
+module.exports = function() {
+  return 'Package A'
+}
